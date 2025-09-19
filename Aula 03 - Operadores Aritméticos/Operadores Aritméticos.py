@@ -173,7 +173,7 @@ print('O resultado da expressão matemática, soma {} e multiplicação {} e a d
 print('O resultado da expressão matemática, divisão {:.3f}.'.format(s,m,d), end='>>>')
 '''
 
-#exercicios falta fazer
+
 #005.Faça um programa que leia um numero inteiro o seu sucessor e seu antecessor.
 '''005.Faça um programa que leia um numero inteiro o seu sucessor e seu antecessor.'''
 numero = int(input('Digite o Numero Inteiro ? '))
