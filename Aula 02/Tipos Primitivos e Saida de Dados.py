@@ -1,0 +1,121 @@
+#Tipos Primitivos e Saida de Dados:
+'''
+int = numeros inteiro.
+float = numeros reais ou numeros flotuantes.
+bool = valores logicos ou boleano.
+str = valores caracteres ou string.
+'''
+
+'''
+# Exemplos:
+int = 7,-4,9875
+float = 4.5,0.076,-15.223,7.0
+bool = True,False
+str = 'ola','7.5',''
+'''
+
+'''
+# Converte com (int) para interno para soma
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite um valor: '))
+s = n1 + n2
+         
+         
+print('A soma vale',s)
+print('A soma vale {}'.format(s))
+
+# Qual o Tipo dele (type)
+print(type(n1))
+'''
+
+'''
+# Concatenação para interno para soma
+t1 = input('Digite um valor: ')
+t2 = input('Digite um valor: ')
+s1 = t1 + t2
+         
+         
+print('A soma vale',s1)
+print('A soma vale {}'.format(s1))
+
+# Qual o Tipo dele (type)
+print(type(s1))
+'''
+
+# Exercicio:
+'''
+#01
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite um valor: '))
+s = n1 + n2      
+print('A soma entre ',n1,' e',n2,' vale',s)
+'''
+
+'''
+#02
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite um valor: '))
+s = n1 + n2      
+print('A soma entre {} e {} vale {}'.format(n1,n2,s))
+'''
+
+'''
+#Exercicio: Converte com (float).
+n = float(input('Digite um valor: '))
+print(n)
+
+#Exercicio: Converte com (int).
+n1 = int(input('Digite um valor: '))
+print(n1)
+
+#Exercicio: Converte com (str).
+n2 = str(input('Digite um valor: '))
+print(type(n2))
+
+#Exercicio: Converte com (bool).
+n3 = bool(input('Digite um valor: '))
+print(type(n3))
+
+'''
+
+# Metodos de teste de tipo:
+'''
+# Exercico: se ele e Numero e verdadeiro ou falso.
+n = input('Digite um valor: ')
+print(n.isnumeric())
+
+# Exercico: se ele e Letra e verdadeiro ou falso.
+n2 = input('Digite um valor: ')
+print(n2.isalpha())
+
+# Exercico: ele tme Letra e numero e verdadeiro ou falso.
+n3 = input('Digite um valor: ')
+print(n3.isalnum())
+
+
+# Exercico: se ele e Numero e verdadeiro ou falso.
+n4 = input('Digite um valor: ')
+print(n4.isupper())
+'''
+
+'''
+# Desafio: 01 Crie um programa que leia dois números e mostre a soma entre eles:
+n1 = int(input('Digite o numero ? '))
+n2 = int(input('Digite o segundo numero ? '))
+soma = n1 + n2
+
+print('A soma do primeiro numero {} e segundo {} é {}'.format(n1,n2,soma))
+'''
+
+# Desafio: 02 Crie um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possiveis sobre ele.
+seutipo = input('Digite seu tipo ? ')
+
+print('Tipo original:',type(seutipo))
+print('ele tem spaço: ',seutipo.isspace())
+print('ele e Numerico: ',seutipo.isnumeric())
+print('ele e letra: ',seutipo.isalpha())
+print('ele e letra e numero: ',seutipo.isalnum())
+print('ele esta Maiúsculo: ',seutipo.isupper())
+print('ele esta Minúsculo: ',seutipo.islower())
+print('ele esta Capitalizada: ',seutipo.istitle())
+
