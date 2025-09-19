@@ -1,4 +1,5 @@
-# Desafio: 02 Crie um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possiveis sobre ele.
+# Desafio: 02
+# Crie um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possiveis sobre ele.
 seutipo = input('Digite seu tipo ? ')
 
 print('Tipo original:',type(seutipo))
