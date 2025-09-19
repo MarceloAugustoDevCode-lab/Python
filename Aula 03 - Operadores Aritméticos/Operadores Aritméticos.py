@@ -172,7 +172,7 @@ print('O resultado da expressão matemática, soma {}, \n e multiplicação {}, 
 print('O resultado da expressão matemática, soma {} e multiplicação {} e a divisão {:.3f}.'.format(s,m,d), end=' ')
 print('O resultado da expressão matemática, divisão {:.3f}.'.format(s,m,d), end='>>>')
 '''
-# Desafios atenção ele estao na pasta Desafios pronto faça primeiro depois confere.
+# Desafios atenção ele estao na pasta Exercícios pronto faça primeiro depois confere.
 
 #005.Faça um programa que leia um numero inteiro o seu sucessor e seu antecessor.
 
