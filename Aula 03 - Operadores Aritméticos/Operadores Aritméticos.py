@@ -261,6 +261,7 @@ covertdecimal = porcetagem /100
 novopr = valor * covertdecimal
 
 print('O novo preço com {}% de desconto será R$ {} reais'.format(desconto,novopr))
+
 #013.Faça um algoritmo que leia o salrio de um funcionário e mostre seu novo salario, com 15% de aumento.
 '''013.Faça um algoritmo que leia o salrio de um funcionário e mostre seu novo salario, com 15% de aumento.'''
 
