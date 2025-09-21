@@ -64,4 +64,17 @@ print(num)
 import emoji
 print(emoji.emojize('Olá, Mundo! :earth_americas:',language='alias'))
 
+# Exercicios
 
+#016 - crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção inteira.
+#exemplo: Digite um número: 6.127 O número 6.127 tem a parte inteira 6.
+
+# 017 - Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triangulo retangulo, calcule e mostre o comprimento da hipotenusa.
+
+#018 - faça um programa que leia um angulo qualquer e mostre na tela o valor do seno,cosseno e tangente desse angulo.
+
+#019 - Um Professor quer sortear um dos seus quatro alunos para apagar o quadro. faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.
+
+#020 - Omesmo professor do desafio a ordem de apresentação de trabalhos dos alunos. faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
+
+#021 - Faça um programa em Python que abra e reproduza o audio de um arquivo mp3.
