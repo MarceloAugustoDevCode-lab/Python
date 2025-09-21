@@ -41,7 +41,7 @@ numero3 = int(input('digite um numero: '))
 raiz3 = math.sqrt(numero)
 print('A raiz de {} é igual a {}'.format(numero3,math.floor(raiz3)))
 '''
-
+'''
 # agora com from fara mesma coisa
 
 from math import sqrt,floor,ceil
@@ -50,6 +50,18 @@ raiz = sqrt(numero)
 print('A raiz de {} é igual a {}'.format(numero,raiz))
 
 # para ter acesso a mais bibliotecas voce pode acessar pypi.python.org.
+'''
+import random
+num = random.randint(1,10)
+print(num)
 
+# pypi pacote extras que pode ser importada se parada mente.
+"""Vamos la se eu quiser utilizar uma biblioteca emoji ela não funcionara pois
+ ela e uma pacote extra. ira aparecer uma lampada vermelha clica nela  install package 
+ ele vai instalar o pacote extra mais isso so funciona no pycharm em outros editores de 
+ codigo e diferente normamente e no console."""
+
+import emoji
+print(emoji.emojize('Olá, Mundo! :earth_americas:',language='alias'))
 
 
