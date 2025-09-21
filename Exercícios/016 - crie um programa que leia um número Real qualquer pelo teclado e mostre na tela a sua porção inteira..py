@@ -8,7 +8,8 @@ inteiro = math.trunc(num)
 print('O numero digitado é {} de porção intera é {}'.format(num,inteiro))
 
 #ou
+
 #só a Função trunc que foi importada em vez colocar a variavel coloquei no print direto.
 from math import trunc
-num = float(input('Digite o numero: '))
-print('O numero digitado é {} de porção intera é {}'.format(num,math.trunc(num)))
+num2 = float(input('Digite o numero: '))
+print('O numero digitado é {} de porção intera é {}'.format(num2,math.trunc(num2)))
