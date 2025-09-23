@@ -4,7 +4,7 @@ import pygame
 pygame.init()
 # lembrando que as barras tem que ser invertidas "F:\01 Programas Dev\Estudos\Python\som\01.Power.Rangers.mp3".
 # crie uma pasta na pasta principal ou em qualquer pasta do pc e coloque o caminho.
-pygame.mixer.music.load("F:/01 Programas Dev/Estudos/Python/som/01.Power.Rangers.mp3")
+pygame.mixer.music.load("")
 # "a musica e essa foi que eu comecei a gosta de infomatica."
 
 
