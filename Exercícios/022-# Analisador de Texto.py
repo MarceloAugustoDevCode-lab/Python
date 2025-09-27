@@ -8,4 +8,8 @@ print('Analisador seu Nome...')
 print('Seu nome em Maiúsculo é',nome.upper())
 print('Seu nome em Minúsculo é',nome.lower())
 print('Seu nome em todo',len(nome) - nome.count(' '),'Letras') #dessa forma vai eliminar o espaço que damos dentro do a pos o primeiro nome e proximo.
-print('A frase tem' ,nome.find(' '))
+#print('Seu primeiro Nome tem' ,nome.find(' '),'Letras')
+#ou
+separa = nome.split()# transfoma numa lista.
+print(separa)# mostra lista
+print('Seu primeiro Nome {} e ele tem {}'.format(separa[0],len(separa[0]),))
