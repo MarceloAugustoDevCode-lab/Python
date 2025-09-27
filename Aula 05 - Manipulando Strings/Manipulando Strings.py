@@ -78,5 +78,24 @@ print(frase.split()) #Ele faz que cada palavra receber indexação nova ele vai 
 '''
 print(' '.join(frase))
 
+#Exercicios
 
+#022 - Crie um programa que leia o nome completo de uma pessoa e mostre(
+# o nome com todas as letras maiúsculas,o nome com todas as letras minúsculas.
+#Quantas letras ao todoq (sem considerar espaços e quantas eletras tem o primeiro nome.
 
+#023 - Faça um programa que leia um numero de 0 a 9999 e mostra na tela cada um dos digitos separados.
+#ex digite um numero: 1834 unidade:4 , dezena:3 , centena:8 , milhar:1
+
+#024 - Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome 'santo'.
+
+#025 - Crie um programa que leia o nome de uma pessoa e diga se ela tem 'SILVA' no nome.
+
+#026 - Faça um programa que leia uma frase pelo teclado e mostre:
+#quantos vezes aparece a letra "A", em que posição ela aparece a primeira vez.
+#em que posição ela aparece a ultima vez.
+
+#027 - Crie um programa que leia o nome de uma pessoa, mostrando em seguida o primeiro e o ultimo nome separadamente
+#ex ana maria de souza
+#primeiro = ana
+#ultimo = souza
