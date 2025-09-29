@@ -22,6 +22,7 @@ else:
     print('O maior valor digitado! {}'.format(numero3))
 
 #ou
+
 '''
 #verifica menor
 menor = numero
