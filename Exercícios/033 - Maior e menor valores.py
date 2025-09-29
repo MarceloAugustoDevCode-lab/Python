@@ -12,6 +12,7 @@ elif numero2 < numero3:
     print('O menor valor digitado! {}'.format(numero2))
 else:
     print('O menor valor digitado! {}'.format(numero3))
+
 #verifica maior
 if numero > numero2:
     print('O maior valor digitado! {}'.format(numero))
