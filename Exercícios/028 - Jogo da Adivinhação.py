@@ -13,3 +13,6 @@ if numero == adivinhar:
     print('Parabens você venceu!')
 else:
     print('Você perdeu!')
+
+#ou
+
