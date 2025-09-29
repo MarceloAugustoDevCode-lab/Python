@@ -2,7 +2,7 @@
 
 from datetime import date
 
-ano = int(input('Quantos anos na mesma? '))
+ano = int(input('Quantos anos na mesma? Coloque 0 para analisar o ano atual:'))
 if ano == 0:
     ano = date.today().year
 
