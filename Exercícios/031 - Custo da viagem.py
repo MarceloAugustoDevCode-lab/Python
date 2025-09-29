@@ -3,10 +3,10 @@
 
 distancia = int(input('Qual a Distancia da viagem em Km ? '))
 limite = 200
-c = distancia * 0.50
-c2 = distancia * 0.45
+cobrado = distancia * 0.50
+cobrado2 = distancia * 0.45
 
 if distancia <= limite:
-    print('Você foi cobrado em R${} pelo distancia {}Km/h.'.format(c,distancia))
+    print('Você foi cobrado em R${} pelo distancia {}Km/h.'.format(cobrado,distancia))
 else:
-    print('Você foi cobrado em R${} pelo distancia {}Km/h.'.format(c2,distancia))
+    print('Você foi cobrado em R${} pelo distancia {}Km/h.'.format(cobrado2,distancia))
