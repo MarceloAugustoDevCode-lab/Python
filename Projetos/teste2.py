@@ -1,41 +1,60 @@
 
 
-def main(page: ft.Page):
-    # Configura a janela
-    page.title = "MP3 Player"
+from flask import Flask, render_template, request, redirect, url_for, session
 
+app = Flask(__name__)
+app.secret_key = 'sua_chave_secreta_aqui'  # Use uma chave forte e secreta!
 
-    tocando = False  # estado da música
+# Dados de produtos (substitua por seus produtos)
+produtos = {
+    'prod_01': {'nome': 'Produto Incrível 1', 'preco': 50.00, 'imagem': 'produto1.jpg'},
+    'prod_02': {'nome': 'Produto Incrível 2', 'preco': 75.50, 'imagem': 'produto2.jpg'},
+}
 
-    # texto que mostra status
-    status = ft.Text("Parado")
+@app.route('/')
+def index():
+    return render_template('index.html', produtos=produtos)
 
-    # função chamada ao clicar no botão
-    def button_clicked(e):
-        nonlocal tocando
-        if not tocando:
-            pygame.mixer.music.play()
-            botao.icon = ft.Icons.PAUSE_CIRCLE_OUTLINED
-            status.value = "Tocando!"
-            tocando = True
-        elif tocando:
-            pygame.mixer.music.stop()
-            botao.icon = ft.Icons.STOP_CIRCLE_OUTLINED
-            status.value = "Parado!"
-            tocando = False
+@app.route('/produto/<id_produto>')
+def produto(id_produto):
+    produto_selecionado = produtos.get(id_produto)
+    if not produto_selecionado:
+        return "Produto não encontrado", 404
+    return render_template('product.html', produto=produto_selecionado)
+
+# Lógica de carrinho (Adicionar, remover, etc.)
+@app.route('/adicionar-carrinho/<id_produto>')
+def adicionar_carrinho(id_produto):
+    if 'carrinho' not in session:
+        session['carrinho'] = {}
+
+    produto_selecionado = produtos.get(id_produto)
+    if produto_selecionado:
+        carrinho = session['carrinho']
+        if id_produto in carrinho:
+            carrinho[id_produto]['quantidade'] += 1
         else:
-            pygame.mixer.music.pause()
-            botao.icon = ft.Icons.PLAY_CIRCLE_FILL_OUTLINED
-            status.value = "Pausado!"
-            tocando = False
+            carrinho[id_produto] = produto_selecionado
+            carrinho[id_produto]['quantidade'] = 1
+        session.modified = True  # Marca a sessão como modificada
 
-        page.update()
+    return redirect(url_for('ver_carrinho'))
 
-    # botão
-    botao = ft.IconButton(icon=ft.Icons.PLAY_CIRCLE_FILL_OUTLINED,icon_size=30,on_click=button_clicked)
+@app.route('/carrinho')
+def ver_carrinho():
+    carrinho = session.get('carrinho', {})
+    total = sum(item['preco'] * item['quantidade'] for item in carrinho.values())
+    return render_template('cart.html', carrinho=carrinho, total=total)
 
-    # Usando Column para alinhar no centro
-    page.add((([botao,status]),alignment = ft.alignment.top_center,horizontal_alignment = ft.alignment.top_center))
-    page.update()
+# Lógica de checkout e pagamento
+@app.route('/checkout', methods=['GET', 'POST'])
+def checkout():
+    if request.method == 'POST':
+        # Aqui você integraria com uma API de pagamento real (como Stripe ou Mercado Pago)
+        # Para o seu caso, pode ser apenas uma confirmação simples.
+        return render_template('checkout_sucesso.html')
 
-ft.app(target=main)
+    return render_template('checkout.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
