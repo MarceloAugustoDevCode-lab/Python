@@ -30,12 +30,12 @@ opcão = int(input('Sua opção: '))
 
 if opcão == 1:
     num = bin(num)
-    print('\033[1;31;40m{}\033[m'.format(num))
+    print('\033[1;31;40m{}\033[m'.format(num[2:]))
 elif opcão == 2:
     num =  oct(num)
-    print('\033[1;35;40m{}\033[m'.format(num))
+    print('\033[1;35;40m{}\033[m'.format(num[2:]))
 elif opcão == 3:
     num = hex(num)
-    print('\033[1;32;40m{}\033[m'.format(num))
+    print('\033[1;32;40m{}\033[m'.format(num[2:]))
 else:
     print('Opção invalida!')
