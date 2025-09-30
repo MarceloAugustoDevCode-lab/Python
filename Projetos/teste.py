@@ -25,20 +25,34 @@ while play != 'stop':
         print("Opção inválida. Tente novamente.")
 
 
-    def tocar():
-        # Pergunta a entrada uma única vez dentro do loop
-        #play = input("Digite o \033[1;31;40m'play'\033[m para tocar \033[1;31;40m'pause'\033[m para parar e \033[1;31;40m'stop'\033[m para sair: ")
-        # Esta função será chamada quando o botão for clicado
-        if play == 'play':
-            pygame.mixer.music.play()
-        elif play == 'pause':
-            pygame.mixer.music.pause()
-        elif play == 'stop':
-            pygame.mixer.music.stop()
-        else:
-            print("Opção inválida. Tente novamente.")
-        # Atualiza o botão para mostrar o novo texto
-        page.update()
+def botao_pause(e):
+    # A função muda o valor da mensagem para um novo texto
+    mensagem.value = "Tocando!" and pygame.mixer.music.pause()
 
-    # Cria o botão, que vai iniciar a música.
-    meu_botao = ft.ElevatedButton(text='play',on_click= tocar())
+    # Avisa ao Flet para atualizar a tela e mostrar a mudança
+    page.update()
+
+    # 3. Cria o botão e o conecta à função 'botao_clicado'
+
+
+botao = ft.ElevatedButton(text="Clique aqui", on_click=botao_pause)
+
+# 4. Adiciona o texto e o botão à página
+page.add(mensagem, botao)
+
+
+def botao_stop(e):
+    # A função muda o valor da mensagem para um novo texto
+    mensagem.value = "Tocando!" and pygame.mixer.music.stop()
+
+    # Avisa ao Flet para atualizar a tela e mostrar a mudança
+    page.update()
+
+
+# 3. Cria o botão e o conecta à função 'botao_clicado'
+botao = ft.ElevatedButton(text="Clique aqui", on_click=botao_stop)
+
+# 4. Adiciona o texto e o botão à página
+page.add(mensagem, botao)
+
+page.add(ft.Stack([ft.Column([ft.ElevatedButton(text="Botão"),ft.Text("Status: OK", size=16),],top=50,left=50,)],expand=True))
