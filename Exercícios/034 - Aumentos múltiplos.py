@@ -6,8 +6,17 @@
 
 valor = float(input('Digite os Valor do Salario ? '))
 
+if valor <= 1250:
+    novo = valor + (valor * 15 / 100)
+else:
+    novo = valor + (valor * 10 / 100)
+print('O seu antigo salario R${} reais \n O novo salario aumento será R${} reais'.format(valor,novo))
 
-if valor < 1250:
+#ou
+
+
+'''
+if valor <= 1250:
     aumento = 15
     covertdecimal = aumento / 100
     calculoaumento = valor * covertdecimal
@@ -20,5 +29,4 @@ else:
     calculoaumento = valor * covertdecimal
     novosalario = calculoaumento + valor
     print('O seu antigo salario R${} reais \n O novo salario com {}% de aumento será R${} reais \n Salario Total R${} reais'.format(valor,aumento,calculoaumento,novosalario))
-
-
+'''
