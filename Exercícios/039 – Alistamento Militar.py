@@ -6,22 +6,6 @@
 
 import datetime
 
-data = datetime.date.today().year
-print(data)
-nascimento = int(input('Digite o ano do seu nascimento: '))
-idade = data - nascimento
-
-
-
-if nascimento == 18:
-    print('Quem nasceu em {} e tem {} anos, o Seu alistamento e agora!!! {}'.format(nascimento,idade, data))
-elif nascimento < 18:
-    saldo = 18 - idade
-    print('Quem nasceu em {} e tem {} anos ,Seu alistamento vai ser em {}.'.format(nascimento,idade ,saldo))
-elif nascimento > 18:
-    saldo = idade - 18
-    print('Seu alistamento foi ja passou!!!')import datetime
-
 # Obtém o ano atual
 ano_atual = datetime.date.today().year
 
