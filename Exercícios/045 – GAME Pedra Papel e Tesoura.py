@@ -1,0 +1,1 @@
+#045 - Cria um programa que faça o computador jogar Jokanpô com você
