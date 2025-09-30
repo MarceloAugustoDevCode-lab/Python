@@ -8,7 +8,7 @@ reta2 = float(input('Digite o comprimento do segunda reta: '))
 reta3 = float(input('Digite o comprimento do terceira reta: '))
 
 if reta1 + reta2 > reta3 and reta1 + reta3 > reta2 and reta2 + reta3 > reta1:
-    print('Os segmentos acima podem formar um triângulo.. sim')
+    print('Os segmentos acima podem formar um triângulo.. sim', end=', ')
     if reta1 == reta2 == reta3:
         print('Esse Triângulo é Equilátero:')
     elif reta1 == reta2 or reta1 == reta3 or reta2 == reta3:
