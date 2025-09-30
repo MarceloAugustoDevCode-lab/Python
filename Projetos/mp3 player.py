@@ -23,7 +23,7 @@ def main(page: ft.Page, ):
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
 
 
-    while play != 'stop':
+    def tocar():
         # Pergunta a entrada uma única vez dentro do loop
         #play = input("Digite o \033[1;31;40m'play'\033[m para tocar \033[1;31;40m'pause'\033[m para parar e \033[1;31;40m'stop'\033[m para sair: ")
         # Esta função será chamada quando o botão for clicado
@@ -39,7 +39,7 @@ def main(page: ft.Page, ):
         page.update()
 
     # Cria o botão, que vai iniciar a música.
-    meu_botao = ft.ElevatedButton(text='play',on_click= play == 'play')
+    meu_botao = ft.ElevatedButton(text='play',on_click= tocar())
 
     # Adiciona o botão à página
     page.add(meu_botao)
