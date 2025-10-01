@@ -4,8 +4,8 @@
 #– em até 2x no cartão: preço formal
 #– 3x ou mais no cartão: 20% de juros
 
-valor = int(input('Digite sua valor: '))
-escolha = str(input('Digite sua escolha: A a vista ou B cartão a vista ou C cartão ate 2x vezes sem juros ou D em 3x + 20% de juros ?')).upper()
+valor = int(input('Digite sua valor do Produto: '))
+escolha = str(input('Digite sua escolha: \033[1;31;40mA\033[m a vista ou \033[1;32;40mB\033[m cartão a vista ou \033[1;35;40mC\033[m cartão ate 2x vezes sem juros ou \033[1;34;40mD\033[m em 3x + 20% de juros ?')).upper()
 vista ='A'
 cartao ='B'
 parcela2x='C'
@@ -14,18 +14,18 @@ if escolha == 'A' or escolha == 'B' or escolha == 'C' or escolha == 'D':
     if escolha == 'A':
         avista = valor  * 10 / 100 # porcentagem 30% / 100%
         avista = valor - avista
-        print('à vista dinheiro/cheque: 10% de desconto,TOTAL R${} reais'.format(avista))
+        print('\033[1;32;40mà vista dinheiro/cheque: 10% de desconto,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(avista))
     elif escolha == 'B':
         cartao = valor * 5 / 100
         cartao = valor - cartao
-        print('à vista no cartão: 5% de desconto,TOTAL R${} reais'.format(cartao))
+        print('\033[1;32;40mà vista no cartão: 5% de desconto,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(cartao))
     elif escolha == 'C':
         parcela2x = valor / 2
-        print('Parcela em até 2x no cartão: preço formal,TOTAL R${} reais'.format(parcela2x))
+        print('\033[1;32;40mParcela em até 2x no cartão: preço formal,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(parcela2x))
     elif escolha == 'D':
         parcela3x = valor * 20 / 100 # porcentagem 30% / 100%
         parcela3x = valor + parcela3x
         parcela3x = (parcela3x /3)
-        print('Parcela em até 3x ou mais no cartão: 20% de juros,TOTAL R${} reais'.format(parcela3x))
+        print('\033[1;32;40mParcela em até 3x ou mais no cartão: 20% de juros,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(parcela3x))
 else:
     print('tente novamente')
