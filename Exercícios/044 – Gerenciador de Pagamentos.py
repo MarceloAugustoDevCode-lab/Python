@@ -5,9 +5,9 @@
 #– 3x ou mais no cartão: 20% de juros
 
 valor = int(input('Digite sua valor: '))
-escolha = str(input('Digite sua escolha: A a vista ou B cartão a vista ou C cartão ate 2x vezes sem juros ou D em 3x + 20% de juros ?'))
+escolha = str(input('Digite sua escolha: A a vista ou B cartão a vista ou C cartão ate 2x vezes sem juros ou D em 3x + 20% de juros ?')).upper()
 vista ='A'
-cartaob ='B'
+cartao ='B'
 parcela2x='C'
 parcela3x='D'
 if escolha == 'A' or escolha == 'B' or escolha == 'C' or escolha == 'D':
