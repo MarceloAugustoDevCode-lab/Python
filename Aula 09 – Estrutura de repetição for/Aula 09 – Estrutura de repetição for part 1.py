@@ -42,8 +42,8 @@
 #pega
 
 #Digite print('oi') 8 vezes.
-oi= ''
-for oi in range(0,9):
-    print('\033[1;31;40m{}\033[m'.format(oi), end=' ')
-    pass
+contador =''
+for contador in range(0,9):
+    print('\033[1;31;40m{}\033[m'.format(contador), end=' ')
+print('\033[1;31;40mFIM\033[m')
 
