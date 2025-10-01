@@ -14,12 +14,11 @@ if escolha == 2:
     cartao = valor * 5 / 100
     cartao = valor - cartao
     print('à vista no cartão: 5% de desconto,TOTAL R${} reais'.format(cartao))
-
-parcela2x = valor / 2
-print('Parcela em até 2x no cartão: preço formal,TOTAL R${} reais'.format(parcela2x))
-
-
-parcela3x = valor * 20 / 100 # porcentagem 30% / 100%
-parcela3x = valor + parcela3x
-parcela3x = (parcela3x /3)
-print('Parcela em até 3x ou mais no cartão: 20% de juros,TOTAL R${} reais'.format(parcela3x))
+if escolha == 3:
+    parcela2x = valor / 2
+    print('Parcela em até 2x no cartão: preço formal,TOTAL R${} reais'.format(parcela2x))
+if escolha == 4:
+    parcela3x = valor * 20 / 100 # porcentagem 30% / 100%
+    parcela3x = valor + parcela3x
+    parcela3x = (parcela3x /3)
+    print('Parcela em até 3x ou mais no cartão: 20% de juros,TOTAL R${} reais'.format(parcela3x))
