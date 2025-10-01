@@ -47,3 +47,9 @@ for contador in range(0,9):
     print('\033[1;31;40m{}\033[m'.format(contador), end=' ')
 print('\033[1;31;40mFIM\033[m')
 
+#Contando para trâs
+
+contador2 =''
+for contador2 in range(0,9):
+    print('\033[1;31;40m{}\033[m'.format(contador2), end=' ')
+print('\033[1;31;40mFIM\033[m')
