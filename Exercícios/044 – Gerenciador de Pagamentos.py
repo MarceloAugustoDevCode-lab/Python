@@ -4,8 +4,8 @@
 #– em até 2x no cartão: preço formal
 #– 3x ou mais no cartão: 20% de juros
 print('{:=^40}'.format(' \033[1;31;40mLOJAS VAREJO\033[m '))
-valor = float(input('Digite sua valor do Produto: '))
-escolha = str(input('Digite sua escolha: \033[1;31;40mA\033[m a vista ou \033[1;32;40mB\033[m cartão a vista ou \033[1;35;40mC\033[m cartão ate 2x vezes sem juros ou \033[1;34;40mD\033[m em 3x + 20% de juros ?')).upper()
+valor = float(input('Digite sua valor do Produto ? '))
+escolha = str(input('Digite sua escolha: \033[1;31;40mA\033[m a vista ou \033[1;32;40mB\033[m cartão a vista ou \033[1;35;40mC\033[m cartão ate 2x vezes sem juros ou \033[1;34;40mD\033[m em 3x ou mais: +20% de juros ?')).upper()
 vista ='A'
 cartao ='B'
 parcela2x='C'
@@ -28,8 +28,7 @@ if escolha == 'A' or escolha == 'B' or escolha == 'C' or escolha == 'D':
         parcela = valor + parcela
         total = int(input('Quantas parcelas? '))
         parcelas = total + parcela
-        print(parcelas)
         parcelas = parcelas / total
-        print('\033[1;32;40mParcela em até 3x ou mais no cartão: 20% de juros,\033[m\033[1;34;40mPor mês {}x é R${} reais\033[m'.format(total,parcelas))
+        print('\033[1;32;40mParcela em até 3x ou mais no cartão: +20% de juros,\033[m\033[1;34;40mPor mês {}x é R${} reais\033[m'.format(total,parcelas))
 else:
     print('tente novamente')
