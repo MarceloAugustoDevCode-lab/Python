@@ -18,14 +18,14 @@ if escolha == 'A' or escolha == 'B' or escolha == 'C' or escolha == 'D':
     elif escolha == 'B':
         cartao = valor * 5 / 100
         cartao = valor - cartao
-        print('\033[1;32;40mà vista no cartão: 5% de desconto,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(cartao))
+        print('\033[1;32;40mà vista no cartão: 5% de desconto,\033[m\033[1;32;40mTOTAL R${} reais\033[m'.format(cartao))
     elif escolha == 'C':
         parcela2x = valor / 2
-        print('\033[1;32;40mParcela em até 2x no cartão: preço formal,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(parcela2x))
+        print('\033[1;32;40mParcela em até 2x no cartão: preço formal,\033[m\033[1;35;40mTOTAL R${} reais cada mêS\033[m'.format(parcela2x))
     elif escolha == 'D':
         parcela3x = valor * 20 / 100 # porcentagem 30% / 100%
         parcela3x = valor + parcela3x
         parcela3x = (parcela3x /3)
-        print('\033[1;32;40mParcela em até 3x ou mais no cartão: 20% de juros,\033[m\033[1;31;40mTOTAL R${} reais\033[m'.format(parcela3x))
+        print('\033[1;32;40mParcela em até 3x ou mais no cartão: 20% de juros,\033[m\033[1;34;40mTOTAL R${} reais\033[m'.format(parcela3x))
 else:
     print('tente novamente')
