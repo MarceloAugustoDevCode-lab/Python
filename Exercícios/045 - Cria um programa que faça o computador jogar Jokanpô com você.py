@@ -1,5 +1,6 @@
 #045 - Cria um programa que faça o computador jogar Jokanpô com você
 from random import randint
+from time import sleep
 itens =('pedra', 'papel', 'tesoura')
 computador = randint(0, 2)
 print('''Suas opções:
@@ -7,6 +8,11 @@ print('''Suas opções:
 [1] papel
 [2] tesoura''')
 jogador = int(input('Sua escolha: '))
+print('jo')
+sleep(1)
+print('ken')
+sleep(1)
+print('po!!!')
 print('-='*11)
 print('Computador jogou {}'.format(itens[computador]))
 print('Jogador jogou {}'.format(itens[jogador]))
