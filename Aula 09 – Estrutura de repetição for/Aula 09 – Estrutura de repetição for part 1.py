@@ -40,7 +40,7 @@
     #pula
 #passo
 #pega
-
+'''
 #Digite print('oi') 8 vezes.
 contador =''
 for contador in range(0,9):
@@ -62,5 +62,26 @@ print('\033[1;31;40mFIM\033[m')
 #modo for com input:
 n = int(input('Digite um numero: '))
 for contador in range(0,n+1):
-    print('\033[1;33;40m{}\033[m'.format(contador), end=' ')
+    print('\033[1;34;40m{}\033[m'.format(contador), end=' ')
 print('fim')
+
+#modo 3 input
+inicio = int(input('Digite um inicio: '))
+fim = int(input('Digite um fim: '))
+pulo = int(input('Digite um passo: '))
+for contador3 in range(inicio,fim+1,pulo):
+    print('\033[1;36;40m{}\033[m'.format(contador3), end=' ')
+print('fim')
+
+#modo for com input dentro:
+for c in range(0,3):
+    t = int(input('Digite um numero: '))
+print('fim')
+
+# soma todos numeros do input no for.
+soma = 0
+for c in range(0,3):
+    n = int(input('Digite um numero: '))
+    soma += n
+print('\033[1;34;40m{}\033[m'.format(soma), end=' ')
+'''
