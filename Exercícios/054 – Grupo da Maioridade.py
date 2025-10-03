@@ -15,8 +15,8 @@ for c in range(1,7+1):
 
 
 
-print(f'Total de pessoas com mais de 18 anos: {maior} ')
-print(f'Total de pessoas com menos de 18 anos: {menor}')
+print(f'Total de pessoas com mais de 18 anos são {maior}')
+print(f'Total de pessoas com menos de 18 anos são {menor}')
 
 
 
