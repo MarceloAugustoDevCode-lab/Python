@@ -20,12 +20,13 @@ arqmp3 = os.listdir(arquivos)
 # Lista de arquivos dentro da pasta
 lista = list(arqmp3)
 
-for numero in range(0, len(lista)):
-    musica = arquivos + "\\" + lista[numero]
-    print(numero,end=' ')
-    print(musica)
-pygame.mixer_music.load(musica)
-print(numero)
+# Mostra as músicas numeradas
+for i, nome in enumerate(lista):
+    print(i, arquivos + "\\" + nome)
+
+# Seleciona a primeira música (índice 0)
+musica = arquivos + "\\" + lista[0]
+pygame.mixer.music.load(musica)
 
 
 play = ''
@@ -36,7 +37,7 @@ proxima = ''
 
 while play != 'stop':
     play = input("Digite o \033[1;31;40m'<'\033[m para voltar \033[1;31;40m'play'\033[m para tocar \033[1;31;40m'>'\033[m para avançar \033[1;31;40m'pause'\033[m para parar e \033[1;31;40m'stop'\033[m para sair: ")
-    musica = 0
+
     if play == 'play':
         pygame.mixer.music.play()
     elif play == 'pause':
@@ -44,14 +45,16 @@ while play != 'stop':
     elif play == 'stop':
         pygame.mixer.music.stop()
     elif play == '<':
-        pygame.mixer_music.load()
+        musica = arquivos + "\\" + lista[0]
+        print(musica)
+        pygame.mixer.music.load(musica)
         pygame.mixer.music.stop()
         pygame.mixer.music.play()
-        print()
     elif play == '>':
-        pygame.mixer_music.load()
+        musica = arquivos + "\\" + lista[+1]
+        print(musica)
+        pygame.mixer.music.load(musica)
         pygame.mixer.music.stop()
         pygame.mixer.music.play()
-        print()
     else:
         print("Opção inválida. Tente novamente.")
