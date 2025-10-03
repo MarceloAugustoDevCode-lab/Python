@@ -1,6 +1,7 @@
 # interface Flet
 import flet as ft
 from flet.core.column import Column
+from flet.core.stack import Stack
 
 
 def main(page: ft.Page):
@@ -113,10 +114,12 @@ def main(page: ft.Page):
     # Criando stack
     st = ft.Stack(
 [
-        ft.ElevatedButton('Botão 3')
+        ft.ElevatedButton('Botão 3'),
         ft.Image(
-            src=f"imagem.png"
-        )
+            src=f"Aula de Interface Flet/imagens/Flamengo.png",
+            width = 150,
+            height = 150
+    )
         ],width=300,height=300,)
     page.add(st)
     # ----------------------------------------------------
