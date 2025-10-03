@@ -7,8 +7,8 @@ def main(page: ft.Page):
     # nome da pagina
     page.title = "Mp3 Player"
     page.padding=0
-    page.width = 640
-    page.height = 480
+    page.window_width = 640
+    page.window_height = 480
     page.update()
 
 
