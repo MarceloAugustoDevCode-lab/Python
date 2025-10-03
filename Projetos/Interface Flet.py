@@ -115,7 +115,7 @@ def main(page: ft.Page):
 [
         ft.ElevatedButton('Botão 3')
         ft.Image(
-            src=
+            src=f"imagem.png"
         )
         ],width=300,height=300,)
     page.add(st)
