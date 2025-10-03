@@ -6,27 +6,14 @@ def main(page: ft.Page):
     # adicionar controles na pagina
     # nome da pagina
     page.title = "Mp3 Player"
-    page.padding=0
-    page.window_width = 640
-    page.window_height = 480
+    page.padding = 0
+    page.window.width = 450
+    page.window.height = 550
+
+
+
+
     page.update()
-
-
-
-    # botão
-    def button_clicked(e):
-        b.data += 1
-        t.value = f"Button clicked {b.data} time(s)"
-        page.update()
-
-    b = ft.IconButton(
-        icon=ft.Icons.PLAY_CIRCLE_FILL_OUTLINED, on_click=button_clicked, data=0
-    )
-    t = ft.Text()
-
-    page.add(b, t)
-
-
 
 
 ft.app(port=8550,target=main)
