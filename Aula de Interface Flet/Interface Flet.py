@@ -123,4 +123,23 @@ def main(page: ft.Page):
         ],width=300,height=300,)
     page.add(st)
     # ----------------------------------------------------
+
+    #STACK POR BAIXO DOS BOTÕES
+    # stack
+    # ----------------------------------------------------
+    # Criando stack
+    st1 = ft.Stack(
+        [
+            ft.ElevatedButton('Botão12'),
+            ft.Image(
+                src=f"Flamengo.png",
+                width=150,
+                height=150
+            ),
+            row,
+        ], width=500, height=300, )
+    page.add(st1)
+    # ----------------------------------------------------
+
+
 ft.app(port=8550,target=main)
