@@ -1,5 +1,6 @@
 import pygame
 import os
+import flet as ft
 
 # Inicializa o pygame e seus módulos
 pygame.init()
@@ -35,6 +36,18 @@ stop = ''
 retroceder = ''
 proxima = ''
 
+
+def main(page: ft.Page):
+    page.title = "MP3"
+
+    page.add(
+        ft.ElevatedButton(text='play'),
+        ft.Button('stop', disabled=True),
+    )
+
+
+
+
 while play != 'stop':
     play = input("Digite o \033[1;31;40m'<'\033[m para voltar \033[1;31;40m'play'\033[m para tocar \033[1;31;40m'>'\033[m para avançar \033[1;31;40m'pause'\033[m para parar e \033[1;31;40m'stop'\033[m para sair: ")
 
@@ -58,3 +71,5 @@ while play != 'stop':
         pygame.mixer.music.play()
     else:
         print("Opção inválida. Tente novamente.")
+
+    ft.app(main)
