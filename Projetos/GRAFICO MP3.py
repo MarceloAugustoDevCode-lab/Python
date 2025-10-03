@@ -7,6 +7,7 @@ def main(page: ft.Page):
     # nome da pagina
     page.title = "Mp3 Player"
     page.padding=0
+    page.update()
 
 
     # botão
