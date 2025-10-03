@@ -20,21 +20,12 @@ arqmp3 = os.listdir(arquivos)
 # Lista de arquivos dentro da pasta
 lista = list(arqmp3)
 
-sim = 0
-for c in range(0, len(lista)):
-    totalcaminho = arquivos + "\\" + lista[c]
-    print(totalcaminho)
-totalcaminho = arquivos + "\\" + lista[c == sim]
-print(totalcaminho)
-
-
-musica = arquivos + "\\" + lista[0]
-musica1 = arquivos + "\\" + lista[1]
-
-pygame.mixer_music.load(musica,musica1)
-print(musica)
-print(musica1)
-
+for numero in range(0, len(lista)):
+    musica = arquivos + "\\" + lista[numero]
+    print(numero,end=' ')
+    print(musica)
+pygame.mixer_music.load(musica)
+print(numero)
 
 
 play = ''
@@ -53,14 +44,14 @@ while play != 'stop':
     elif play == 'stop':
         pygame.mixer.music.stop()
     elif play == '<':
-        pygame.mixer_music.load(musica0)
+        pygame.mixer_music.load()
         pygame.mixer.music.stop()
         pygame.mixer.music.play()
-        print(musica1)
+        print()
     elif play == '>':
-        pygame.mixer_music.load(musica1)
+        pygame.mixer_music.load()
         pygame.mixer.music.stop()
         pygame.mixer.music.play()
-        print(musica1)
+        print()
     else:
         print("Opção inválida. Tente novamente.")
