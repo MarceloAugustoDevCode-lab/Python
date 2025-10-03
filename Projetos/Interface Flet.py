@@ -114,9 +114,9 @@ def main(page: ft.Page):
     # Criando stack
     st = ft.Stack(
 [
-        ft.ElevatedButton('Botão 3'),
+        ft.ElevatedButton('Botão1'),
         ft.Image(
-            src=f"Aula de Interface Flet/imagens/Flamengo.png",
+            src=f"Flamengo.png",
             width = 150,
             height = 150
     )
