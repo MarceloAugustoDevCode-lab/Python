@@ -37,18 +37,31 @@ retroceder = ''
 proxima = ''
 
 
+
+
+
 def main(page: ft.Page):
-    page.title = "MP3"
+    page.title = "Icon button with 'click' event"
 
-    page.add(
-        ft.ElevatedButton(text='play'),
-        ft.Button('stop', disabled=True),
+    def button_clicked(e):
+        b.data += 1
+        t.value = f"Button clicked {b.data} time(s)"
+        page.update()
+
+    b = ft.IconButton(
+        icon=ft.Icons.PLAY_CIRCLE_FILL_OUTLINED, on_click=button_clicked, data=0
     )
+    t = ft.Text()
+
+    page.add(b, t)
 
 
 
 
-while play != 'stop':
+
+
+
+
     play = input("Digite o \033[1;31;40m'<'\033[m para voltar \033[1;31;40m'play'\033[m para tocar \033[1;31;40m'>'\033[m para avançar \033[1;31;40m'pause'\033[m para parar e \033[1;31;40m'stop'\033[m para sair: ")
 
     if play == 'play':
