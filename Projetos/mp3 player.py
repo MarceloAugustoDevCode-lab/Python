@@ -1,38 +1,28 @@
-
-
-
-
-
-
 import pygame
-import flet as ft
 import os
 
-
+# Inicializa o pygame e seus módulos
 pygame.init()
-# lembrando que as barras tem que ser invertidas "F:\01 Programas Dev\Estudos\Python\som\01.Power.Rangers.mp3".
-# crie uma pasta na pasta principal ou em qualquer pasta do pc e coloque o caminho.
 
-# "a musica e essa foi que eu comecei a gosta de Informatica."
+# Lembrando que as barras tem que ser invertidas "F:\01 Programas Dev\Estudos\Python\som\01.Power.Rangers.mp3".
+# crie uma pasta na pasta principal ou em qualquer pasta do pc e coloque o caminho.
+# " Essa música que foi que comecei a gostar de Informatica."
 # pygame.mixer.music.load(r"F:\01 Programas Dev\Estudos\Python\som\01.Power.Rangers.mp3")
+
+# Caminho da pasta onde estão as músicas
 arquivos = os.path.join(r"F:\01 Programas Dev\Estudos\Python\som")
 # lista de nomes musicas mp3.
 arqmp3 = os.listdir(arquivos)
+
+# Lista de arquivos dentro da pasta
 lista = list(arqmp3)
-cont = 0
+'''sim = 0
 for c in range(0, len(lista)):
     totalcaminho = arquivos + "\\" + lista[c]
     print(totalcaminho)
-totalcaminho = arquivos + "\\" + lista[c]
-
+totalcaminho = arquivos + "\\" + lista[c == sim]
+'''
 pygame.mixer_music.load(totalcaminho)
-play = input("Digite o \033[1;31;40m'<'\033[m para voltar  \033[1;31;40m'>'\033[m para avançar")
-if play == '<':
-    c -= 1
-    pygame.mixer.music.play()
-elif play == '>':
-    c += 1
-    pygame.mixer.music.play()
 
 
 play = ''
@@ -50,5 +40,11 @@ while play != 'stop':
         pygame.mixer.music.stop()
     elif play == 'stop':
         pygame.mixer.music.stop()
+    elif play == '<':
+
+        pygame.mixer.music.play()
+    elif play == '>':
+
+        pygame.mixer.music.play()
     else:
         print("Opção inválida. Tente novamente.")
