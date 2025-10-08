@@ -15,7 +15,7 @@ def main(page: ft.Page):
 
     #texto
     page.add(ft.Text('Ola'))
-'''
+
     # container botão ----------------------------------
     cb1 = ft.Container(
         content = ft.ElevatedButton('Botão'),
@@ -26,7 +26,7 @@ def main(page: ft.Page):
     # adicionando o container
     page.add(cb1)
     #---------------------------------------------------
-
+'''
     # container botão ----------------------------------
     cb2 = ft.Container(
         content = ft.ElevatedButton('>'),
