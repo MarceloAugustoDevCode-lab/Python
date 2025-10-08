@@ -8,16 +8,10 @@
 
 
 
-escolha = 's'
-while escolha != 'n':
+escolha = 'S'
+while escolha != 'N':
     print(30*'=')
-    print('''
-        [1]somar
-        [2]multiplicar
-        [3]maior
-        [4]novos numeros
-        [5]sair do programa
-    ''')
+    print('[1]somar\n[2]multiplicar\n[3]maior\n[4]novos numeros\n[5]sair do programa')
     print(30*'=')
     escolha = str(input('Digite o numero de sua preferencia: ')).strip().upper()[0]
     if escolha == '5':
@@ -49,7 +43,8 @@ while escolha != 'n':
                 print('O primeiro numero e maior que o segundo numero')
             else:
                 print('O segundo numero e maior que o primeiro numero')
-        #Continua
-        if escolha == 'n':
-            print('O programa terminou com sucesso')
-            escolha = 'n'
+    #Continua
+    escolha = str(input('Deseja Continuar [S/N]: ')).strip().upper()[0]
+    if escolha == 'N':
+        print('O programa terminou com sucesso')
+        escolha = 'N'
