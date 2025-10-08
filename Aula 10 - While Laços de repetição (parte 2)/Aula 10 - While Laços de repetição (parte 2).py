@@ -67,6 +67,25 @@ while nt != 0:
         impar +=1
 print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 
+# parte break e continue fica para proxima aula.
+
+#exercicios:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
