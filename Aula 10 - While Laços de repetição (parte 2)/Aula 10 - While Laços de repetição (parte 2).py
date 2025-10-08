@@ -84,9 +84,10 @@ print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 #[ 5 ] sair do programa
 #Seu programa deverá realizar a operação solicitada em cada caso.
 
+#060 - Faça um programa que leia um número qualquer e mostre o seu fatorial. Exemplo:
+#5! = 5 x 4 x 3 x 2 x 1 = 120
 
-
-
+#061 - Refaça o DESAFIO 51, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
 
 
 
