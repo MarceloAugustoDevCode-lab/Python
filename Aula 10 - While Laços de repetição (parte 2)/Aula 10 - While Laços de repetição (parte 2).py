@@ -113,3 +113,4 @@ print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 
 
 
+
