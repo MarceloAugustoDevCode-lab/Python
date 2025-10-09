@@ -4,8 +4,8 @@ c = 0
 total = 0
 while n != 999:
     c +=1
-    n = int(input(f'Digite {c}° numero: '))
+    n = int(input(f'Digite {c}° numero [999 para parar]: '))
     if n == 999:
         continue
     total += n
-print(f'A soma dos numeros: {total}')
+print(f'Você digitou {c-1} números e a soma dos numeros: {total}')
