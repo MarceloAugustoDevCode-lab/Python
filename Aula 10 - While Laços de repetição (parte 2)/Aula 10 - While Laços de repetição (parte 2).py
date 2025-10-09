@@ -89,6 +89,12 @@ print(f'Você digitou {par} numeros pares e {impar} numeros impares')
 
 #061 - Refaça o DESAFIO 51, lendo o primeiro termo e a razão de uma PA, mostrando os 10 primeiros termos da progressão usando a estrutura while.
 
+#062 - Melhore o DESAFIO 61, perguntando para o usuário se ele quer mostrar mais alguns termos. O programa encerrará quando ele disser que quer mostrar 0 termos.
+
+#063 - Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci. Exemplo:
+#0     –   1   –   1   – 2 – 3 – 5 – 8
+#termo - termo2
+
 
 
 
