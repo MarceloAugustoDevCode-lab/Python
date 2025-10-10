@@ -16,8 +16,9 @@ while True:
     print(f'{c} X {valor} = {total}')
 print('-'*30)
 print('PROGRAMA ENCERRADO')
+
+#ou com for
 '''
-#ou
 while True:
     n = int(input('Digite a tabuada de qual valor: '))
     print('-'*30)
