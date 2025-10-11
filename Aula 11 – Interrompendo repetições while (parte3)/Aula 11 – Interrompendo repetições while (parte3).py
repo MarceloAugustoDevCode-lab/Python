@@ -57,3 +57,8 @@ print(f'A soma vale {s}!')
 # 068 - Faça um programa que jogue par ou ímpar com o computador. O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
 
 # 069 - Crie um programa que leia a idade e o sexo de várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No final, mostre:
+
+# 070 - Crie um programa que leia o nome e o preço de vários produtos. O programa deverá perguntar se o usuário vai continuar ou não. No final, mostre:
+# A) qual é o total gasto na compra.
+# B) quantos produtos custam mais de R$1000.
+# C) qual é o nome do produto mais barato.
