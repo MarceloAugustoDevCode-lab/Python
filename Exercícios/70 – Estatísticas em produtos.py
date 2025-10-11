@@ -16,17 +16,20 @@ print(30*'-')
 while True:
     c +=1
     nome = str(input('Digite seu nome do Produto: ')).strip().upper()
-    produto = int(input('Digite o preço R$: '))
+    produto = float(input('Digite o preço R$: '))
     total += produto
     if produto > 1000:
        produtocaro += 1
-    if produto < produto:
+    if c == 1:
         nomebarato = nome
         produtobarato = produto
+    else:
+        if produto < produtobarato:
+            produtobarato = produto
 
     continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
     if continuar =='N':
         break
-print(f'O total da compra foi R$ {total}')
+print(f'O total da compra foi R$ {total:.2f}')
 print(f'Temos {produtocaro} produtos custando R$1000.00')
-print(f'O produto mais barato foi {nomebarato} que custa R${produtobarato}')
+print(f'O produto mais barato foi {nomebarato} que custa R${produtobarato:.2f}')
