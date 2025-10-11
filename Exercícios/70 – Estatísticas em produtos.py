@@ -17,16 +17,19 @@ while True:
     c +=1
     nome = str(input('Digite seu nome do Produto: ')).strip().upper()
     produto = float(input('Digite o preço R$: '))
+    #total dos produtos
     total += produto
+    #maior que 1000
     if produto > 1000:
        produtocaro += 1
+   # menor produto
     if c == 1:
         nomebarato = nome
         produtobarato = produto
     else:
         if produto < produtobarato:
             produtobarato = produto
-
+    #continua
     continuar = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
     if continuar =='N':
         break
