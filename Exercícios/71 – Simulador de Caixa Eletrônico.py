@@ -2,40 +2,30 @@
 #considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
 
 
-contagem = 0
-cedulas1 = 1
-cedulas10 = 10
-cedulas20 = 20
-cedulas50 = 50
-valor = 0
-
 print(30*"=")
 print("CAIXA ELETRONICO")
 print(30*"=")
-
-contagem += 1
-valor = int(input("Digite o valor do saque? R$ "))
-resto1 = valor // cedulas50
-print(resto1)
-
-resto2 = resto1
-resto2 = resto1 // cedulas20
-print(resto2)
-
-resto3 = resto2
-resto3 = resto2 // cedulas10
-print(resto3)
-
-resto4 = resto3
-resto4 = resto3 // cedulas1
-print(resto4)
-
-
-
-
-print(f'Total de {resto1} cedulas de R$ 50')
-print(f'Total de {resto2} cedulas de R$ 20')
-print(f'Total de {resto3} cedulas de R$ 10')
-print(f'Total de {resto4} cedulas de R$ 1')
+valor = int(input('Que valor você quer sacar? R$'))
+total = valor
+ced = 50
+totced = 0
+while True:
+    if total >= ced:
+        total -= ced
+        totced += 1
+    else:
+        if totced > 0:
+            print(f'Total de {totced} cédulas de R${ced}')
+        if ced==50:
+            ced = 20
+        elif ced==20:
+            ced = 10
+        elif ced==10:
+            ced = 1
+        totced = 0
+        if total == 0:
+            break
+print('='*30)
+print('Volte sempre a Banco CEV! Tenha um bom dia!')
 
 
