@@ -52,3 +52,16 @@ print(c)
 #OU
 C=B+A
 print(C)
+
+print(len(C))
+print(c.count(5))
+print(c.index(8))
+print(c.index(8,5))#deslocamento
+
+pessoas=('gustavo',39,'Papel',25)
+print(pessoas)
+#del apaga qualquer coisa no python
+del(pessoas[0])
+# ele so aceita deletar se for tupla inteira
+del(pessoas)
+
