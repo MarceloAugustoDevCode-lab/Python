@@ -22,11 +22,13 @@ print(len(lanche)) # quantos elementos tem no lanche que e 4
 
 # com estrutura for.
 for c in lanche: #
-    print(c)
+    print(f'Eu vou comer {c}')
+print('Comi pra caramba!')
 
+# aqui ele vai mostra o indice da tupla lanche 0123
 for cont in range(0, len(lanche)):
     print(cont)
-
+# aqui ele vai mostra a cada item na tupla.
 for cont1 in range(0, len(lanche)):
     print(lanche[cont1])
 
@@ -41,4 +43,12 @@ for pos,comida in enumerate(lanche):
 # o sorted coloca em ordem alfabetica.
 print(sorted(lanche))
 
-
+A=(2,5,4)
+B=(5,8,1,2)
+c=A+B
+print(A)
+print(B)
+print(c)
+#OU
+C=B+A
+print(C)
