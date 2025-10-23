@@ -40,3 +40,30 @@ print(valores)
 
 # Saber quantos elementos tem aqui.
 print(len(valores))
+
+# pratica ex1:
+
+valores = []
+valores.append(5)
+valores.append(9)
+valores.append(4)
+
+for v in valores:
+    print(f'{v} ', end='')
+
+#ex2:
+valores1 = []
+valores1.append(5)
+valores1.append(9)
+valores1.append(4)
+for c, v in enumerate(valores1):
+    print(f'\n Na posição {c} encontrei o valor {v}!', end='')
+print(' Cheguei ao final da lista.')
+
+# ex3:
+valores2 = list()
+for c1 in range(0,5):
+    valores2.append(int(input(f'Digite o valor {c1}: ')))
+for c1, v1 in enumerate(valores2):
+    print(f'\n Na posição {c1} encontrei o valor {v1}!', end='')
+print(' Cheguei ao final da lista.')
