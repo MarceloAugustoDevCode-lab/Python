@@ -1,19 +1,12 @@
 
 
-lista = [1, 2, 3, 4, 5]
-n = 0
+lista = []
+
 n = int(input('Digite um valor: '))
+lista.append(n)
 
 
-if n > 0 in lista:
-    lista.insert(0,n)
-if n > 1 in lista:
-    lista.insert(1,n)
-if n >= 2 in lista:
-    lista.insert(2,n)
-if n < 3 in lista:
-    lista.insert(3,n)
 if n > 4 in lista:
-    lista.insert(4,n)
+    lista.insert(3,n)
 
 print(lista)
