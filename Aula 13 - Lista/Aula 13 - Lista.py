@@ -75,4 +75,12 @@ b[2] = 8
 print(f'Lista A:{a}')
 print(f'Lista B:{b}')
 
+num = [2,3,4,7]
+num.append(8)
+num[2] = 9
+num.sort(num)
+num.sort(reverse=True)
+num.insert(2,8)
+num.remove(2)
+print(f'Lista A:{num}')
 
