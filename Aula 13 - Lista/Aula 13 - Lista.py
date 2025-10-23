@@ -67,3 +67,12 @@ for c1 in range(0,5):
 for c1, v1 in enumerate(valores2):
     print(f'\n Na posição {c1} encontrei o valor {v1}!', end='')
 print(' Cheguei ao final da lista.')
+
+# ex4:
+a=[2,3,4,7]
+b=a[:]
+b[2] = 8
+print(f'Lista A:{a}')
+print(f'Lista B:{b}')
+
+
