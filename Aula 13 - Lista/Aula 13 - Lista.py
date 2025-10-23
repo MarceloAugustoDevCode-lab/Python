@@ -84,3 +84,7 @@ num.insert(2,8)
 num.remove(2)
 print(f'Lista A:{num}')
 
+if 5 in num:
+    num.remove(5)
+else:
+    print('Não achei o numero 5')
